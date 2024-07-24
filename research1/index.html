@@ -1,0 +1,297 @@
+ <!--fancier site-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health and Wellness</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2 class="logo"><a href="#"></a></h2> <!--Logo here -->
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label>
+
+        <ul class="all-links">
+        
+          <li><a href="#home">Main</a></li>
+          <li><a href="#services">Exercise</a></li>
+          <li><a href="#portfolio">Mental Wellness</a></li>
+         
+          <li><a href="#health">Nutrition</a></li>
+          <li><a href="#contact">Contact</a></li>
+  
+          
+        </ul>
+
+           <!-- MENU BUTTON >-->
+           <!--
+        <div class="dropdown">
+            <button class="dropbtn">MENU</button>
+            <div class="dropdown-content">
+              <a href="#home">Main Page</a>
+              <a href="#services">Exercise</a>
+              <a href="#portfolio">Mental Wellness</a>
+              <a href="#health">Nutrition</a>
+             <a href="#contact">Contact</a>
+            </div>
+          -->
+          </div>
+        
+
+  <!-- SEARCH BAR >--> 
+          <input type="text" id="searchInput" placeholder="Search Here...">
+          
+          <button id="searchButton">Search <i class='bx bx-search'></i> </button>
+          
+      
+          <script>
+              document.getElementById('searchButton').addEventListener('click', redirectToResults);
+              document.getElementById('searchInput').addEventListener('keypress', function(event) {
+                  if (event.key === 'Enter') {
+                      redirectToResults();
+                  }
+              });
+      
+              function redirectToResults() {
+                  const query = document.getElementById('searchInput').value;
+                  if (query) {
+                      window.location.href = `results.html?query=${encodeURIComponent(query)}`;
+                  }
+              }
+          </script>
+            
+ <!--SIDEBAR 
+        <div class="sidebar">
+          <a class="home" href="#home">Home</a>
+          <a href="#services">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+        >end sidebar-->
+      </nav>
+    </header>
+
+    <!--Pages Content-->
+    <section class="homepage" id="home">
+      <div class="content">
+        <div class="text">
+          <h1> Health and Wellness </h1>
+          <p>
+            Explore options to enhance your health and well-being. <br></p>
+        </div>
+        <a href="#services">LEARN MORE</a>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h2>Types of Exercises</h2>
+      <p>Explore these different low strength exercises to keep you mobile and healthy.</p>
+      <ul class="cards">
+        <li class="card">
+          <img src="images/yoga.jpg" alt="img">
+          <h3>Yoga</h3>
+          <p>Yoga enhances mobility through gentle stretching. This exercise improves flexibilty and can help you relax.</p>
+        </li>
+        <li class="card">
+          <img src="images/walk.jpg" alt="img">
+          <h3>Walking</h3>
+          <p>As a low-impact exercise, walking is great for cardio health and increasing energy.</p>
+        </li>
+        <li class="card">
+          <img src="images/stretch.jpg" alt="img">
+          <h3>Stretching</h3>
+          <p>Stretching will help prevent injuries and decrease stiffness. It improves your range of motion too.</p>
+        </li>
+        <li class="card">
+          <img src="images/taichi.jpg" alt="img">
+          <h3>Tai Chi</h3>
+          <p>By focusing on balance and coordination, the steadiness of Tai Chi boosts mental calmnesss.</p>
+        </li>
+        <li class="card">
+          <img src="images/water.jpg" alt="img">
+          <h3>Water Aerobics</h3>
+          <p>Water aerobics puts minimal stress on joints but can be a full body workout.</p>
+        </li>
+        <li class="card">
+          <img src="images/sit.jpg" alt="img">
+          <h3>Sit to Stand</h3>
+          <p>Sit to stand exercises strengthen leg and spine abilities. They are great for making everyday movements easier.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h2> Wellness</h2>
+      <p>These are simple but effective ways to take care of your mental wellbeing.</p>
+      <ul class="cards">
+        <li class="card">
+          <a href="https://www.w3schools.com/">
+            <div class="image-container">
+              <img src="images/community.jpg" alt="img">
+              <button class = "hovering-button">Read Me</button>
+            </div>
+          </a>
+          <h3>Community of People</h3>
+          <p>Partaking in social activities aids in preventing loneliness and will allow you to foster meaningful connections with others. This can lead to a better sense of belonging and offers a new source of support.</p>
+        </li>
+        <li class="card">
+          <img src="images/nutrition.jpg" alt="img">
+          <h3>Nutrition</h3>
+          <p>Enjoy a delicious yet well-balanced diet filled with vitamins and minerals to increase your energy, support your health and boost your mood. </p>
+        </li>
+        <li class="card">
+          <img src="images/reading.jpg" alt="img">
+          <h3>Start a Hobby</h3>
+          <p>Whether it's reading, art, or any other actitivty, pursuing a hobby results in joy and a sense of purpose. Finding your craft will bring about geniune passion for your choice of activity..</p>
+        </li>
+        <li class="card">
+          <img src="images/pet.jpg" alt="img">
+          <h3>Pets</h3>
+          <p>Pets can be a source of companionship, mood improvement and a positive emotional impact. Importantly, spending time with your pet can help you reduce stress levels.</p>
+        </li>
+        <li class="card">
+          <img src="images/games.jpg" alt="img">
+          <h3>Play Games</h3>
+          <p>The experince of playing games lets you stay active, whether mentally or physically, and allows you to stimulate the mind. You can take a break and engage in something fun.</p>
+        </li>
+        <li class="card">
+          <img src="images/sleep.jpg" alt="img">
+          <h3>Sleep</h3>
+          <p>Getting quality sleep is important for cognitive function and a stable mood. It can reduce the risk of depression and anxiety as well! </p>
+        </li>
+      </ul>
+    </section>
+
+<!-- about us section
+    <section class="about" id="about">
+      <h2>About Us</h2>
+      <p>Discover our story in providing camping services.</p>
+      <div class="row company-info">
+        <h3>Our Story</h3>
+        <p>Experience the excellence of our camping gear and services, where we have been offering high-quality camping essentials and gear for outdoor enthusiasts for over a decade. Our commitment to quality and customer satisfaction ensures that every adventurer can rely on us for their camping needs.</p>
+      </div>
+      <div class="row mission-vision">
+        <h3>Mission</h3>
+        <p>Our mission is to provide elders with a resource on health tips and information such as exercise and mental wellness in an accessible format.</p>
+        <h3>Our Vision</h3>
+        <p>Our vision is to become the go-to destination for camping enthusiasts, known for our extensive selection of premium camping gear and exceptional customer service. We aspire to inspire and enable people to embrace the beauty of nature and create unforgettable camping experiences.</p>
+      </div>
+      <div class="row team">
+        <h3>Our Team</h3>
+        <ul>
+          <li>John Doe - Founder and CEO</li>
+        </ul>
+      </div>
+    </section>
+  end about us section -->
+
+  <!-- contact section
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <p>Reach out to the sources below for any questions or feedback.</p>
+      <div class="row">
+        <div class="col information">
+          <div class="contact-details">
+            <p><i class="fas fa-map-marker-alt"></i> Minneapolis, MN</p>
+            <p><i class="fas fa-envelope"></i> ahmeda15@augsburg.edu</p>
+            <p><i class="fas fa-phone"></i> (123)456-7890</p>
+            <p><i class="fas fa-clock"></i> Monday - Friday: 9:00 AM - 5:00 PM</p>
+            <p><i class="fas fa-clock"></i> Saturday - Sunday: Closed</p>
+            <p><i class="fas fa-globe"></i> www.research.com</p>
+          </div>          
+        </div>
+        <div class="col form">
+          <form>
+            <input type="text" placeholder="Name*" required>
+            <input type="email" placeholder="Email*" required>
+            <textarea placeholder="Message*" required></textarea>
+            <button id="submit" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+ end contact section -->
+
+<!-- trying to change the health section -->
+<section class="health" id="health">
+  <h2>Eating Healthy</h2>
+  <p>Lets focus on food and how you can stay nutritious.</p>
+
+  <ul class="cards">
+    <li class="card">
+      <img src="images/food1.jpg" alt="img">
+      <h3>Essential Foods</h3>
+      <p>Review the different food groups, essential vitamins, etc  and incorpate them into your daily eating habits and lifestyle.</p>
+    </li>
+    <li class="card">
+      <img src="images/food2.jpg" alt="img">
+      <h3>Cook At Home</h3>
+      <p>Choose to cook more meals at home often than eating takeout. Gather a community and eat with loved ones.</p>
+    </li>
+    <li class="card">
+      <img src="images/food3.jpg" alt="img">
+      <h3>Plan Your Meals</h3>
+      <p>By portioning and cooking your meals ahead of time, it becomes easier to stick to eating healthy.</p>
+    </li>
+  </ul>
+</section>
+
+  <!-- Calorie Tracker (page) -->
+  <section class="tracker" id="tracker">
+        <h3>Track Your Calorie Intake</h3>
+          <form id="calorie-form">
+            <label for="food">Food Item:</label>
+            <input type="text" id="food" name="food" required>
+            <label for="calories">Calories:</label>
+             <input type="number" id="calories" name="calories" required>
+              <button type="button" onclick="addCalorieEntry()">Add</button>
+            </form>
+        <div id="calorie-entries"></div>
+          <p id="total-calories">Total Calories: 0</p>
+    <link rel="stylesheet" href="calorie.css">
+    <script src="health.js"></script>
+</section>
+
+  <!-- CHATBOT-->
+  <div id="chatbot-container">
+    <div id="chatbot-header">
+        <h2>CHAT WITH US!</h2>
+        <button id="close-chatbot">Close Tab</button>
+    </div>
+    <div id="chatbot-messages"></div>
+    <div id="chatbot-input-container">
+        <input type="text" id="chatbot-input" placeholder="Type a message...">
+        <button id="send-button">SEND</button>
+    </div>
+</div>
+<button id="open-chatbot"></button> <!--replaced with mail icon-->
+<link rel="stylesheet" href="chatstyle.css">
+<script src="chatscript.js"></script>
+  <!-- chatbot-->
+
+  <footer>
+      <div>
+        <!--<span>Copyright © 2024 All Rights Reserved</span> -->
+        <span class="link">
+            <a href="#home">Main</a>
+            <a href="#contact">Contact</a>
+        </span>
+      </div>
+    </footer>
+   
+     
+  </body>
+</html>
+
+
